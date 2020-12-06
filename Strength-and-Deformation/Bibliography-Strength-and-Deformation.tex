@@ -1,0 +1,38 @@
+\documentclass{ctexart}
+
+% \usepackage[round]{natbib}
+\usepackage[
+    backend=biber,
+    style=gb7714-2015,
+    gblanorder=chineseahead,
+    sortlocale=zh__pinyin,
+    block=nbpar
+]{biblatex}
+\usepackage[a4paper,layout=a4paper,top=2cm,bottom=2cm]{geometry}
+\usepackage[colorlinks,citecolor=blue]{hyperref}
+%\usepackage[doipre={doi:~}]{uri}
+\usepackage{xcolor}
+
+\renewcommand{\bibfont}{\zihao{-5}}%\fangsong
+% 题名字体
+\renewcommand{\bibauthorfont}{\bfseries\color{teal}}%
+\renewcommand{\bibtitlefont}{\em\color{blue}}%
+\renewcommand{\bibpubfont}{\itshape\color{violet}}%
+% url和doi字体
+\def\UrlFont{\ttfamily} %\urlstyle{sf} %\def\UrlFont{\bfseries}
+
+\title{上海黏土强度强度变形特性研究及其在基坑工程分析中的应用：关于上海黏土的强度变形特性的参考文献}
+\author{}
+\date{}
+\addbibresource{papers/Bibliography-Strength-and-Deformation.bib}
+
+\pagestyle{empty}
+
+\begin{document}
+    \thispagestyle{empty}
+    
+    \maketitle
+    \vspace{-3cm}
+    \nocite{*}
+    \printbibliography[title={~}]
+\end{document}

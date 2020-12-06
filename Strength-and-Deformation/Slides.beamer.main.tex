@@ -1,0 +1,280 @@
+
+\input{preamble.tex}
+
+\title{关于土的强度与变形特性的文献研究}
+\author{汪海林}
+\institute[地下建筑与工程系]{同济大学土木工程学院地下建筑与工程系}
+\date{\today}
+
+\addbibresource{papers/Bibliography-Strength-and-Deformation.bib}
+\addbibresource{papers/Related-Bibliography.bib}
+
+\begin{document}
+
+\frame[plain]\titlepage
+
+\begin{frame}[plain]{目录}
+    \tableofcontents
+\end{frame}
+
+\section{土的强度特性}
+
+\begin{frame}{\footcite{Gao1986}：\href{run:./papers/Gao1986-Geotechnical properties of Shanghai soils and engineering applications.pdf}{上海土体的岩土特性及工程应用}}
+    \begin{block}{主要内容}
+        \begin{itemize}
+            \item 本文的第一部分是对上海典型土层的解释，并给出了\structure{不同土体数相关的经验公式}。这是作者在岩土工程咨询服务以及基础工程实践准则的准备和修订研究中做出的努力的结果。 希望这些对其他人以及东海 (东海) 海洋地质技术的未来发展有用，因为海床土与陆地沉积物有着密切的关系。
+            \item 本文的第二部分开始研究典型土层的\structure{水平渗透系数}和\structure{有效覆盖压力下不排水强度的增加}。在这些土体上，设计20000吨油箱的浅层基础并安预加载排水测试期的计划，获得了可观的经济效应。
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{\citet{Gao1986}：\href{run:./papers/Gao1986-Geotechnical properties of Shanghai soils and engineering applications.pdf}{上海土体的岩土特性及工程应用}}
+    \begin{itemize}
+        \item 上海土层类型分类 (\structure{TABLE 1}) 
+    \end{itemize}
+    
+    \begin{table}
+        \scriptsize
+        %\caption{上海土层分类}
+        \begin{tabular}{p{0.35\textwidth} p{0.03\textwidth} p{0.30\textwidth}}
+            \toprule
+            地质来源 & 层  & 土体类型 \\
+            \midrule
+            \multicolumn{3}{c}{全新世} \\
+            \midrule
+            河口冲积物 & 1  & 填土 \\
+             & 2 &  黄黑褐色硬壳层 \\
+            浅海沉积物 & 3 & 亚黏土或轻亚黏土；淤泥；极细的砂 \\
+             & 4 & 淤泥质黏土 \\
+            沿海浅海沼泽沉积物；滨河河流沉积物 & 5 & 灰色亚黏土\\
+            \midrule
+            \multicolumn{3}{c}{新更新世} \\
+            \midrule
+            湖沉积物 & 6 & 深绿色坚硬层 \\
+            河流沉积物 & 7 & 极细的细砂 \\
+            浅海沉积物 & 8 & 灰色亚黏土 \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{\citet{Gao1986}：\href{run:./papers/Gao1986-Geotechnical properties of Shanghai soils and engineering applications.pdf}{上海土体的岩土特性及工程应用}}
+    \begin{itemize}
+        \item 压缩指数$C_c$的经验关系 (\structure{TABLE 4}, For $\omega_L$: {Skempton1953}, {Terzaghi1948}) 
+        \begin{align}
+            \begin{cases}
+                C_c=\{0.52\sim 0.55\}(e_0-\{0.5\sim 0.53\}),& \text{For Soil Layers 3 and 4} \\
+                C_c=0.486(e_0-0.523),& \text{For Soil Layer 5} \\
+                C_c=\{1.4\sim 1.9\}(0.01\omega_0-\{0.15\sim 0.21\}),& \text{For Soil Layers 3 and 4} \\
+                C_c=1.80(0.01\omega_L-0.22),& \text{For Soil Layers 3 and 4}
+            \end{cases}
+        \end{align}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{\citet{Gao1986}：\href{run:./papers/Gao1986-Geotechnical properties of Shanghai soils and engineering applications.pdf}{上海土体的岩土特性及工程应用}}
+    \begin{itemize}
+        \item 有效静止土压力系数$K_0^\prime$的经验关系 (\structure{TABLE 5}, {Jaky1944}: $K_0=1-\sin\phi$) 
+        \begin{align}
+            \begin{cases}
+                K_0^\prime=0.999-0.993\sin\phi^\prime,& \text{For Soil Layers 3 and 4} \\
+                K_0^\prime=0.155-0.021I_P
+            \end{cases}
+        \end{align}
+        \item 超固结比OCR对$K_0$的影响 (\structure{TABLE 6}, {Ladd1977}: $K_o=K_{on}(\mathrm{OCR})^m$) 
+        \begin{align}
+            \begin{cases}
+                K_0=0.541+0.685\cdot \log(\mathrm{OCR}), &\text{For Layer 2} \\
+                K_0=0.447+0.377\cdot \log(\mathrm{OCR}), &\text{For Layer 6} \\
+                K_0=0.523+0.094\cdot (\mathrm{OCR}), &\text{For Layer 2} \\
+                K_0=0.445\cdot (\mathrm{OCR})^{0.565}, &\text{For Layer 4 and 5} \\
+                K_0=0.335\cdot (\mathrm{OCR})^{0.517}, &\text{For Layer 3} 
+            \end{cases}
+        \end{align}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{\citet{Gao1986}：\href{run:./papers/Gao1986-Geotechnical properties of Shanghai soils and engineering applications.pdf}{上海土体的岩土特性及工程应用}}
+    \begin{itemize}
+        \item 孔压消散对$K_0$的影响 (\structure{EQUATION 5 and 6}) 
+        \begin{align}
+            \begin{cases}
+                K_0=0.54+0.40(u_b/\sigma_l) \\
+                K_o=1.01-0.46U_m
+            \end{cases}
+        \end{align}
+        \item 瞬时荷载土压力系数$K_{ou}$和循环荷载土压力系数$K_{od}$之间的关系 (\structure{EQUATION 7}) 
+        \begin{align}
+            K_{od}\approx 0.8K_{ou}
+        \end{align}
+        \item 强度比与塑性指数之间的关系 (\structure{EQUATION 8}，考虑在有效应力的一定增量下不排水强度的增加量。提出这个问题的原因是，现场叶片剪切强度有时会大大超过{Terzaghi1948}和{Leonards1962}等其他作者的公式所给出的抗剪强度) 
+        \begin{align}
+            c_u/p_0=0.11+0.0037I_P
+        \end{align}
+    \end{itemize}
+    
+\end{frame}
+
+\begin{frame}{\footcite{Dassargues1991}: \href{run:./papers/Dassargues1991-Geotechnical properties of the Quaternary sediments in Shanghai.pdf}{上海第四纪沉积物的岩土特性}}
+    \begin{block}{主要内容}
+        上海的地基土由长江河口的第四纪沉积物组成。 由于对位于这些沉积物中的密闭多含水层系统中的抽水作用，城市中心经历了人工诱发的下陷。连同对更新世后沉积和堆积条件的沉积学研究，已经进行了精确的岩土研究，这些研究根据\structure{人工鉴定}，\structure{固结试验}和\structure{三轴试验}获得的所有可用数据完成。 \structure{粒度分析}，\structure{X射线分析}，\structure{可压缩性}，\structure{孔隙率}，\structure{预固结压力}，\structure{渗透系数}的分析都考虑了沉积层序，推导了参数之间的某些关系，并将水动力参数与压实参数相关联，以预测其耦合和非耦合。 以及其对沉降现象的线性影响。
+   
+        \vspace{5mm}
+        结论在于确定在这些第四纪地层中评价压实敏感性不同的区域。
+    \end{block}
+\end{frame}
+
+\begin{frame}{\citet{Dassargues1991}: \href{run:./papers/Dassargues1991-Geotechnical properties of the Quaternary sediments in Shanghai.pdf}{上海第四纪沉积物的岩土特性}}
+
+    \vspace{-3mm}
+    \begin{table}[H]
+        \scriptsize
+        \tabcolsep=1mm
+        \begin{threeparttable}[b]
+        \begin{tabular}{lllll}
+            \toprule
+            Layer & Plasticity & Compressibilty & C.P.T. tests & Permeability and others \\
+            \midrule
+            S\tnote{1} & $I_{\mathrm{P}}=0.91 \left(w_{\mathrm{L}}-18.08\right)$ & & $7\le Q_{\mathrm{c}}\le 20$ & \multirow{8}*{\makecell[l]{$K-e-I_P$之间的经验关系 ({Nishida1969})：\\$
+                \begin{cases}
+                    e=a+b\log_{10}k\\
+                    a=10b\\
+                    b=C+DI_P
+                \end{cases}$\\
+                $
+                \begin{cases}
+                    b=0.213+0.083I_P, & \text{For 1C}\\
+                    b=0.0167+0.0174I_P, & \text{For 2C}\\
+                    b=0.0885+0.0127I_P, & \text{For DGSC}\\
+                    b=0.176+0.079I_P, & \text{For 3C}
+                \end{cases}$}}\\
+            PA\tnote{2} & & $0.04\le C_{\mathrm{c}}\le 0.09$ & &  \\
+            1C\tnote{3} & $I_{\mathrm{p}}=0.63 \left(w_{\mathrm{L}}-9.38\right)$ & $0.4\le C_{\mathrm{c}}\le 1.2 $ & \makecell{$2\le Q_{\mathrm{c}}\le 5$ \\(Top 2C)} & \\
+            2C\tnote{4} & $I_{\mathrm{P}}=0.75 \left(w_{\mathrm{L}}-16.49\right)$ & $0.3\le C_{\mathrm{c}}\le 1.2$ & \makecell{$4.5\le Q_{\mathrm{c}}\le 16$ \\(Lower 2C)} & \\
+            DGSC\tnote{5} & $I_{\mathrm{P}}=0.53 \left(w_{\mathrm{L}}-6.04\right)$ & $0.2\le C_{\mathrm{c}}\le 0.4$ & $15\le Q_{\mathrm{c}}\le 35$ & \\
+            1A upper\tnote{6} & & \multirow{2}*{$0.2\le C_{\mathrm{c}} \le 0.3$} & & \\
+            1A lower\tnote{7} & & & & \\
+            3C\tnote{8} & $I_{\mathrm{P}}=0.57 \left(w_{\mathrm{L}}-7.79\right)$ & $0.3\le C_{\mathrm{c}} \le 0.5$ & $20\le Q_{\mathrm{c}}\le 50$ & \\
+            2A\tnote{9} & & $0.15\le C_{\mathrm{c}} \le 0.2$ & $100\le Q_{\mathrm{c}}$ & \makecell[l]{$1\times 10^{-4}\le K\le 8.7\times 10^{-4}$ m/s\\$1\times 10^{-6}\le S_{\mathrm{s}}\le 2\times 10^{-5}$ $\mathrm{m^{-1}}$}\\
+            \bottomrule
+        \end{tabular}
+        \begin{tablenotes}
+            \item[1] Superficial layer.
+            \item[2] Phreatic aquifer.
+            \item[3] First compressible layer.
+            \item[4] Second compressible layer.
+            \item[5] Dark green stiff clay.
+            \item[6] First aquifer upper.
+            \item[7] First aquifer lower.
+            \item[8] Third compressible layer.
+            \item[9] Second aquifer.  
+        \end{tablenotes}
+        \end{threeparttable}
+    \end{table}
+\end{frame}
+
+\iffalse
+\begin{frame}{\citet{Dassargues1991}: \href{run:./papers/Dassargues1991-Geotechnical properties of the Quaternary sediments in Shanghai.pdf}{上海第四纪沉积物的岩土特性}}
+    \begin{block}{结论}
+        在通过数学模型计算地面沉降之前，可以指出一些有关上海中心地区全新世和上更新世沉积物特征的主要事实。
+
+        \begin{itemize}
+            \item 主要细分是从岩性第四纪分析中得出的，并且通过工程地质和岩土工程测试的结果得到了充分的确认和详细说明。
+
+            \item 对于序列的不同单位，已经获得了水文地质参数和工程地质参数，因为它们是沉降计算所必需的。
+
+            \item 似乎变化的沉积条件已导致不同单元的几何复杂分布。 这种分布会影响不同区域的压实值。 例如，缺乏DGSC层和/或第一蓄水层将在理论上增加有关区域的沉降值。 相反，第一蓄水层和第二蓄水层之间的连接（在这种情况下，第三水层可压缩性缺失，并且在某些地方发生了与``黄浦江''有关但在第一压层中包括的潜水含水层， 当然，可压缩层相对可变的厚度及其最终的有机物含量也会极大地影响沉降现象。
+        \end{itemize}
+
+        根据这些结论，可以绘制一张地图，表示对沉降现象更敏感的区域（图12）。
+
+    \end{block}
+\end{frame}\fi
+
+\begin{frame}{\footcite{Hu1979}：\href{run:./papers/Hu1979-上海软土地基的天然强度及强度增长.pdf}{上海软土地基的天然强度及强度增长}}
+    \begin{block}{主要内容}
+        本文为上海软土强度试验资料的初步总结, 包括四个部分：
+        \begin{itemize}
+            \item 关于上海软土地基的天然强度；
+            \item 软土在固结过程中强度增长的规律；
+            \item 稳定分析中的几个问题；
+            \item 上海软土地基预压的一些经验。
+        \end{itemize}
+        
+        提出了上海地区自地表以下$10\sim 20$米范围内三轴不排水强度的经验公式 ($S=0.27+0.01\times(Z-10)\mathrm{kg/cm^2}$)，且正常密实土的天然不排水强度与有效覆盖压力比$s/p^\prime\approx 0.33\sim 0.37$；分析了上海某厂2台油罐的充水预压资料; 初步探讨了在加荷过程中软土地基的固结规律 。从而提出了在软土地基上应考虑适应于固结速率的最佳设计这一观点 , 以减少工程投资费用。
+    \end{block}
+\end{frame}
+
+\begin{frame}{\footcite{Deng1980}：\href{run:./papers/Deng1980-上海软粘土应力应变非线性特性的初步试验.pdf}{上海软粘土应力应变非线性特性的初步试验}}
+    \begin{block}{主要内容}
+        结合上海某工程， 对地面下2-26米的四层粘性土所取``不扰动''土样，用三轴仪做了固结不排水和排水试验，获得了以双曲线函数表达的非线性关系及参数，并用归一化的方法整理了试验资料，最后用司开浦登、贝伦的方法计算了 地基变形。
+        \begin{small}
+            \begin{align}
+                \begin{cases}
+                    E_{t}=\left[1-\dfrac{R_{f}\left(\sigma_{1}-\sigma_{3}\right)(1-\sin \varphi)}{2 \cos \varphi+2 \sigma_{3} \sin \varphi}\right]^{2} \cdot E_{i}, &E_{i}=K \cdot P_{a} \cdot\left(\dfrac{\sigma_{3}}{P_{a}}\right)^{n} \\[5mm]
+                    \mu_{t}=\dfrac{G-F \log \left(\sigma_{3} / P_{a}\right)}{(1-A)^{2}}, &A=\dfrac{\left(\sigma_{1}-\sigma_{3}\right) \cdot D}{K \cdot P_{a} \cdot\left(\sigma_{3} / P_{a}\right)^{n}} \times \dfrac{1}{\left[1-\dfrac{R_{f}(1-\sin \varphi)\left(\sigma_{1}-\sigma_{3}\right)}{2 \cos \varphi+2 \sigma_{3} \sin \varphi}\right]}
+                \end{cases}
+            \end{align}
+        \end{small}
+    \end{block}
+\end{frame}
+
+\begin{frame}{\citet{Deng1980}：\href{run:./papers/Deng1980-上海软粘土应力应变非线性特性的初步试验.pdf}{上海软粘土应力应变非线性特性的初步试验}}
+    \begin{table}
+        \scriptsize
+        \tabcolsep=.7mm
+        \begin{tabular}{*{18}{c}}
+            \toprule
+            \makecell{土的\\名称} & 深度 & $\sigma_3$ & $(\sigma_1-\sigma_3)_f$ & $(\sigma_1-\sigma_3)_{ult}$ & $a$ & $b$ & $E_i$ & $R_f$ & $n$ & $K$ & $K_{ur}$ & $c^\prime$ & $\varphi^\prime$ & $D$ & $F$ & $G$ & \makecell{剪切\\方法}\\
+            \midrule
+            \makecell{亚\\粘\\土} & \makecell{1.10\\$\sim$\\1.35} & \makecell{0.5\\1.0\\1.5\\2.0\\3.0\\4.0} & \makecell{1.13\\1.80\\2.20\\4.06\\5.41\\6.20} & \makecell{1.26\\2.08\\2.65\\6.25\\8.26\\8.30} & \makecell{0.020\\0.022\\0.016\\0.013\\0.010\\0.007} & \makecell{0.795\\0.480\\0.378\\0.160\\0.121\\0.210} & \makecell{50.0\\45.5\\61.5\\76.9\\102.0\\137.0} & 0.77 7 & 0.78 & 46 & 212 & 0 & $32^\circ 30^\prime$ & & & & \makecell{固结\\不排\\水剪}\\
+            \midrule
+            \makecell{亚粘\\土夹\\薄层\\粉砂} & \makecell{2.10\\$\sim$\\3.30} & \makecell{1.0\\1.5\\2.0\\2.5\\3.0} & \makecell{2.42\\5.38\\2.91\\3.23\\4.15} & \makecell{3.66\\12.60\\4.56\\4.83\\4.74} & \makecell{0.017\\0.017\\0.017\\0.016\\0.015} & \makecell{0.274\\0.079\\.220\\0.207\\0.140} & \makecell{58.1\\59.5\\60.6\\63.69\\66.66} & 0.66 & 0.23 & 51 & 178 & 0 & $36^\circ 30^\prime$ & & & & 同上 \\
+            \midrule
+            \makecell{同\\上} & \makecell{7.00\\$\sim$\\13.00} & \makecell{1.0\\1.5\\2.0\\2.5\\3.0} & \makecell{1.92\\3.54\\4.74\\6.78\\10.02} & \makecell{3.07\\4.65\\6.67\\10.00\\16.70} & \makecell{0.011\\0.008\\0.007\\0.006\\0.005} & \makecell{0.326\\0.215\\0.150\\0.100\\0.060} & \makecell{87.7\\122.0\\147.1\\181.8\\222} & 0.68 & 0.52 & 125 & 368 & 0 & $39^\circ$ & 8.48 & -0.127 & -0.16 & \makecell{固结\\排水\\剪} \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{\citet{Deng1980}：\href{run:./papers/Deng1980-上海软粘土应力应变非线性特性的初步试验.pdf}{上海软粘土应力应变非线性特性的初步试验}}
+    \begin{table}
+        \scriptsize
+        \tabcolsep=.7mm
+        \begin{tabular}{*{18}{c}}
+            \toprule
+            \makecell{土的\\名称} & 深度 & $\sigma_3$ & $(\sigma_1-\sigma_3)_f$ & $(\sigma_1-\sigma_3)_{ult}$ & $a$ & $b$ & $E_i$ & $R_f$ & $n$ & $K$ & $K_{ur}$ & $c^\prime$ & $\varphi^\prime$ & $D$ & $F$ & $G$ & \makecell{剪切\\方法}\\
+            \midrule
+            \makecell{粘\\土} & \makecell{15.10\\$\sim$\\17.30} & \makecell{0.5\\1.0\\1.5\\2.0\\2.5\\3.0} & \makecell{0.84\\1.02\\1.34\\1.78\\2.00\\2.60} & \makecell{1.06\\1.09\\1.56\\2.21\\2.33\\2.82} & \makecell{0.016\\0.008\\0.006\\0.006\\0.005\\0.004} & \makecell{0.940\\0.900\\0.640\\0.450\\0.429\\0.355} & \makecell{62.5\\125.0\\161.3\\181.9\\222.2\\270.3} & 0.87 & 0.68 & 125 & 127 & 0.04 & $32^\circ 30^\prime$ & & & & \makecell{固结\\不排\\水剪} \\
+            \midrule
+            \makecell{亚\\粘\\土} & \makecell{24.1\\$\sim$\\24.8} & \makecell{1.0\\1.5\\2.0\\2.5\\3.0\\3.5\\4.0} & \makecell{2.   1 6\\3.60\\4.01\\4.21\\5.27\\4.83\\5.08} & \makecell{2.56\\4.35\\4.76\\6.26\\6.56\\5.68} & \makecell{0.008\\0.001\\0.006\\0.004\\0.003\\0.002} & \makecell{0.390\\0.230\\0.210\\0.160\\0.180\\0.176} & \makecell{126.6\\147.1\\178.6\\232.6\\312.5\\476.2} & 0.84 & \makecell{0.48\\0.95} & \makecell{120\\100} & 308 & 0 & $30^\circ$ & & & & 同上 \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{\citet{Chen1990}：\href{run:./papers/Chen1990-上海地区软粘土的卸荷—再加荷变形特性.pdf}{上海地区软粘土的卸荷--再加荷变形特性}}
+    \begin{block}{主要内容}
+        计算深基础开挖回弹及再加荷时的沉降在设计中是一个有待于探讨研究的重要课题, 本文着重分析了上海软粘土在卸荷--再加荷时的变形特性, 提出了估算回弹及全补偿沉降的计算式，并探讨了三轴试验条件下土样的卸荷--再加荷变形特性, 建立了相应的应力--应变模型。
+
+        \vspace{-5mm}
+        \begin{align}
+            \begin{cases}
+                \varepsilon_{rC}=1.14\varepsilon_r \\[2mm]
+                \varepsilon_r=\dfrac{C_s\left[\lg\sigma_0-\lg(\sigma_0-\sigma_r)\right]}{1+e_0-\dfrac{1}{2}C_s\left[\lg\sigma_0-\lg(\sigma_0-\sigma_r)\right]}
+            \end{cases}
+        \end{align}
+    \end{block}
+\end{frame}
+
+\section{土的变形特性}
+
+\subsection{土的强度}
+
+\subsection{土的变形}
+
+\section{土的强度变形参数之间的经验关系}
+
+\frame[plain,noframenumbering]{\thankspage}
+    
+\end{document}

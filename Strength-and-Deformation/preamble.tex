@@ -1,0 +1,102 @@
+
+\setbeamerfont*{title}{family=\sffamily, shape=\scshape, series=\bfseries, size=\LARGE}
+\setbeamerfont{frametitle}{family=\rmfamily, shape=\upshape, series=\bfseries}
+\setbeamerfont{normal text}{family=\rmfamily, shape=\upshape, series=\mdseries}
+\AtBeginDocument{\usebeamerfont{normal text}}
+
+\usepackage[
+    backend=biber,
+    style=gb7714-2015ay,
+    gblanorder=chineseahead,
+    sortlocale=zh__pinyin,
+    block=nbpar
+]{biblatex}
+\usepackage{hyperref}
+\hypersetup{colorlinks,allcolors=.,urlcolor=maincolor}
+
+\def\footcite#1{\authornumcite{#1}\footfullcite{#1}}
+
+\colorlet{maincolor}{blue}
+
+\usepackage{tikz}
+\usetheme{Boadilla}
+\usecolortheme{seahorse}
+\useinnertheme[shadow]{rounded}
+\useoutertheme[subsection=false]{smoothbars}
+%\usecolortheme{spruce}
+\usecolortheme[named=maincolor]{structure}
+%\usefonttheme{structurebold}
+\usefonttheme[stillsansseriflarge,onlymath]{serif}
+\useinnertheme{circles}
+%\usecolortheme{rose}
+\usepackage{pifont}
+\usepackage{academicons}
+\usepackage{fontawesome}
+\usepackage{iitem}
+\setbeamertemplate{itemize item}{\ding{108}}
+\setbeamertemplate{itemize subitem}{\ding{109}}
+\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{section in head/foot}{fg=white}
+\setbeamercovered{transparent}  
+\renewcommand\appendixname{附录}
+\renewcommand\abstractname{摘要}
+\graphicspath{{figure/}} % 图片路径
+\usepackage{calligra} % Thank you
+\usepackage{ctex} % 加入中文
+%\setCJKsansfont{Noto Sans CJK SC}
+%\setsansfont{Lato} % Lato Roboto Fira Sans
+
+%\usepackage{mathptmx}
+%\usepackage{helvet}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage[para]{threeparttable}
+\usepackage{float}
+\usepackage{verbatim}
+\usepackage[justification=centering]{caption}
+
+% Add support for \subsubsectionpage
+\setbeamertemplate{section page} 
+{
+    \begin{center}
+        \usebeamerfont{section name}
+        \usebeamercolor[fg]{section name}
+        第\insertsectionnumber 部分
+        \vskip1em\par\hspace{-.6em}
+        \begin{beamercolorbox}[sep=4pt,center]{part title} 
+            \usebeamerfont{section title}
+            \insertsection\par 
+        \end{beamercolorbox}
+    \end{center}
+}
+\def\sectionpage{\usebeamertemplate*{section page}}
+
+\setbeamertemplate{subsection page} 
+{ 
+    \begin{center}
+        \usebeamerfont{subsection name}
+        \usebeamercolor[fg]{subsection name}
+        \vskip1em\par\hspace{-.6em}
+        \begin{beamercolorbox}[sep=4pt,center]{part title} 
+            \usebeamerfont{section title}
+            \insertsection
+        \end{beamercolorbox}
+        \vskip1em\par
+        \insertsubsection\par 
+    \end{center}
+}
+\def\subsectionpage{\usebeamertemplate*{subsection page}}
+
+\setbeamercolor{MainColor}{fg=black,bg=maincolor!40!white}
+\def\thanksinfo{感谢聆听！}
+
+\newcommand{\thankspage}[1][\thanksinfo]{
+    \begin{beamercolorbox}[wd=.95\paperwidth, ht=1.4cm,rounded=true,shadow=true]{MainColor}
+        \begin{center}
+      {\huge #1}
+        \end{center}
+   \end{beamercolorbox}
+}
+
+\usepackage{multicol}
